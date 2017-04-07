@@ -40,7 +40,7 @@ parameter [3:0] CHK_CLR   = 4'h0,
 
 // DEF
 parameter [63:0] DEF_CLR   = 64'hA_0000_987_0_654_0_321,
-				 DEF_MXCNT = 64'd15,
+				 DEF_MXCNT = 64'd31,
 				 DEF_H     = 64'h3,
 				 DEF_W     = 64'h3,
 				 DEF_SP    = 64'h9,

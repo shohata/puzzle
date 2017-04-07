@@ -16,8 +16,10 @@ module register(src0, src1, dst, we, data, clk, rst_n, data0, data1, comp, cnt, 
 	always @(posedge clk) begin
 		if(!rst_n) begin
 			regis[0] <= 0; // null
-//			regis[1] <= 64'h6_0000_687_0_954_0_321;
-			regis[1] <= 64'h5_0000_568_0_297_0_314; // board
+//			regis[1] <= 64'h9_0000_193_0_452_0_768; // 31手
+			regis[1] <= 64'h6_0000_123_0_958_0_746; // 31手
+//			regis[1] <= 64'h4_0000_234_0_169_0_857; // 30手
+//			regis[1] <= 64'h5_0000_568_0_297_0_314; // board
 			regis[2] <= 0; // order
 			regis[3] <= 0; // count
 			regis[4] <= 0; // moved

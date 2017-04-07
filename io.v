@@ -9,7 +9,7 @@ module io(comp, cnt, ord, btn, seg, clk, rst_n);
 	reg [4:0] num;
 	reg [1:0] digit;
 	reg [11:0] buff [3:0];
-	reg [9:0] count;
+	reg [11:0] count;
 	reg [4:0] btn_flag;
 
 `include "def.h"
@@ -21,7 +21,7 @@ module io(comp, cnt, ord, btn, seg, clk, rst_n);
 		SEG_O = 12'b1_0100011, //o
 		SEG_L = 12'b1_1000111, //L
 		SEG_E = 12'b1_0000110, //E
-		SEG_R = 12'b1_1001000, //R
+		SEG_R = 12'b1_0001000, //R
 		SEG_I = 12'b1_1111001, //I
 		SEG_S = 12'b1_0010010, //S
 		SEG_0 = 12'b1_1000000,
@@ -40,7 +40,7 @@ module io(comp, cnt, ord, btn, seg, clk, rst_n);
 			num <= 5'b0;
 			digit <= 2'b0;
 			seg <= 12'b0000_0_0000000;
-			count <= 10'b0;
+			count <= 12'b0;
 			btn_flag <= 5'b00000;
 		end else begin
 			count <= count + 1;
