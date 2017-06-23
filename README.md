@@ -9,6 +9,10 @@ BASYS3 XILINX Artix-7 に実装。
 解き終わると手順を表示し、UP(BTNU)のプッシュボタンを押すと次の手順、DOWN(BTND)のプッシュボタンを押すと前の手順に移動する。  
 7セグLEDの上2桁に手順番号を、下2桁に動かす方向を表示する。
 
+# 配線図
+モジュールの配線を示す。  
+![architecture](https://raw.githubusercontent.com/shohata/puzzle/master/img/all.png)
+
 # モジュール
 各モジュールについて説明する。
 
